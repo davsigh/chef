@@ -1,5 +1,9 @@
-service 'httpd' do
+package 'httpd' do
     action :install
+end
+
+
+service 'httpd' do
     action :start
     action :enable
 end
