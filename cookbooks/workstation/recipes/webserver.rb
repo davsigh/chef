@@ -4,7 +4,7 @@ end
 service 'httpd' do
     action :start
 end
-file '/var/www/html/index.html' do
+template '/var/www/html/index.html' do
     source 'motd.erb'
     owner 'root'
     group 'root'

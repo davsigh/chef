@@ -20,7 +20,7 @@
       },
       "waiver_file": null,
       "json_file": {
-        "location": "/var/chef/compliance_reports/compliance-20210512091840.json"
+        "location": "/var/chef/compliance_reports/compliance-20210512100311.json"
       },
       "run_time_limit": 1.0,
       "result_message_limit": 10000,
@@ -176,23 +176,23 @@
         "surplus": "0"
       },
       "directmap": {
-        "4k": "120832kB",
-        "2M": "927744kB"
+        "4k": "124928kB",
+        "2M": "923648kB"
       },
       "total": "825152kB",
-      "free": "212484kB",
-      "available": "432432kB",
+      "free": "203380kB",
+      "available": "431980kB",
       "buffers": "2104kB",
-      "cached": "321748kB",
-      "active": "375672kB",
-      "inactive": "81840kB",
-      "dirty": "0kB",
+      "cached": "330304kB",
+      "active": "378744kB",
+      "inactive": "87332kB",
+      "dirty": "24kB",
       "writeback": "0kB",
-      "anon_pages": "133708kB",
-      "mapped": "73036kB",
-      "slab": "101420kB",
-      "slab_reclaimable": "44956kB",
-      "slab_unreclaim": "56464kB",
+      "anon_pages": "133680kB",
+      "mapped": "73128kB",
+      "slab": "101844kB",
+      "slab_reclaimable": "45148kB",
+      "slab_unreclaim": "56696kB",
       "page_tables": "10380kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
@@ -351,16 +351,16 @@
           "eth0": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "3322062",
-              "packets": "19501",
+              "bytes": "3803777",
+              "packets": "23083",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "5744555",
-              "packets": "23878",
+              "bytes": "6175738",
+              "packets": "27979",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -381,10 +381,10 @@
     "platform": "redhat",
     "platform_version": "8.3",
     "platform_family": "rhel",
-    "uptime_seconds": 91863,
-    "uptime": "1 day 01 hours 31 minutes 03 seconds",
-    "idletime_seconds": 91647,
-    "idletime": "1 day 01 hours 27 minutes 27 seconds",
+    "uptime_seconds": 94534,
+    "uptime": "1 day 02 hours 15 minutes 34 seconds",
+    "idletime_seconds": 94278,
+    "idletime": "1 day 02 hours 11 minutes 18 seconds",
     "dmi": {
       "dmidecode_version": "3.2",
       "smbios_version": "2.7",
@@ -812,7 +812,7 @@
       "ULONG_MAX": 18446744073709551615,
       "USHRT_MAX": 65535,
       "WORD_BIT": 32,
-      "_AVPHYS_PAGES": 51863,
+      "_AVPHYS_PAGES": 49595,
       "_NPROCESSORS_CONF": 1,
       "_NPROCESSORS_ONLN": 1,
       "_PHYS_PAGES": 206288,
@@ -1124,12 +1124,12 @@
         },
         "/dev/xvda2": {
           "kb_size": "10473452",
-          "kb_used": "2506480",
-          "kb_available": "7966972",
+          "kb_used": "2507196",
+          "kb_available": "7966256",
           "percent_used": "24%",
           "total_inodes": "5241792",
-          "inodes_used": "84407",
-          "inodes_available": "5157385",
+          "inodes_used": "84447",
+          "inodes_available": "5157345",
           "inodes_percent_used": "2%",
           "fs_type": "xfs",
           "mount_options": [
@@ -1438,12 +1438,12 @@
         },
         "/": {
           "kb_size": "10473452",
-          "kb_used": "2506480",
-          "kb_available": "7966972",
+          "kb_used": "2507196",
+          "kb_available": "7966256",
           "percent_used": "24%",
           "total_inodes": "5241792",
-          "inodes_used": "84407",
-          "inodes_available": "5157385",
+          "inodes_used": "84447",
+          "inodes_available": "5157345",
           "inodes_percent_used": "2%",
           "fs_type": "xfs",
           "mount_options": [
@@ -1922,13 +1922,13 @@
         "/dev/xvda2,/": {
           "device": "/dev/xvda2",
           "kb_size": "10473452",
-          "kb_used": "2506480",
-          "kb_available": "7966972",
+          "kb_used": "2507196",
+          "kb_available": "7966256",
           "percent_used": "24%",
           "mount": "/",
           "total_inodes": "5241792",
-          "inodes_used": "84407",
-          "inodes_available": "5157385",
+          "inodes_used": "84447",
+          "inodes_available": "5157345",
           "inodes_percent_used": "2%",
           "fs_type": "xfs",
           "mount_options": [
@@ -2377,7 +2377,7 @@
       "search-state-factory": "/usr/local/share/factory/var",
       "search-configuration": "/root/.config"
     },
-    "ohai_time": 1620811122.3242621,
+    "ohai_time": 1620813793.0726771,
     "packages": {
       "polkit-libs": {
         "epoch": "0",
@@ -5586,23 +5586,21 @@
     "name": "ip-172-31-42-180.ap-south-1.compute.internal",
     "chef_environment": "_default",
     "recipes": [
-      "apache",
-      "apache::default",
-      "apache::webserver"
+      "workstation::webserver"
     ],
     "expanded_run_list": [
-      "apache::default"
+      "workstation::webserver"
     ],
     "roles": [
 
     ],
     "cookbooks": {
-      "apache": {
+      "workstation": {
         "version": "0.1.0"
       }
     }
   },
   "run_list": [
-    "recipe[apache]"
+    "recipe[workstation::webserver]"
   ]
 }
